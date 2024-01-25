@@ -1,39 +1,3 @@
-Installation: Password, Port 5432, NEXT everything else.
-
-/*
-Objectives:
-Get data of patients that had Flu shots in 2022
-1. Get patients' information:
-	a. Age
-	b. Race
-	c. County
-	d. Name
-	
-2. Show whether or not patients received the flu shots in 2022
-
-3. Patient must have been "Active at our hospital"
-	a. Visited the hospital at least once in 2022
-	b. Not dead 
-*/
-
-
-Point out the related column while checking the tables
-Asterisk
-1. Get the patients info
-Check the total rows
-Case-insensitive
-Finish the 1st requirement
-
-5. the flu_shot_2022 temp table will give us all the patients that got the flu shot
-6. pull up the earlist date instead
-7. base on the patient column from flu temp table to identify which patients got the flu shot and those who did not
-8. Last req has 2 conditions:
-	-Visited the hospital at least once in 2022
-	-Must be alive
-9. active_patients cte, use only one "WITH"
-	- distinct
-
-
 with active_patient as
 (
 	select distinct patient
